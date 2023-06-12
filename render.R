@@ -1,3 +1,5 @@
 args = commandArgs(trailingOnly = TRUE)
 library(rmarkdown)
+cat("Rendering RMarkdown")
+cat(paste0("Input file: ", args[1]))
 render(args[1], output_format = args[2])
